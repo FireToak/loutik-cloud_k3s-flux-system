@@ -214,7 +214,7 @@ flux get sources git
 
 - [Documentation FluxCD](https://fluxcd.io/docs/)
 - [Pattern App of Apps](https://fluxcd.io/flux/guides/repository-structure/)
-- Dépôt des manifestes : `loutik-cloud_k3s-manifests`
+- Dépôt des manifestes : [loutik-cloud_k3s-manifests](https://github.com/FireToak/loutik-cloud_k3s-manifests)
 
 ---
 
