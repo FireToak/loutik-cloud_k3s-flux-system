@@ -220,4 +220,4 @@ flux get sources git
 
 **Maintenu par l'équipe DevOps LoutikCLOUD 🦥**
 
-*Dernière mise à jour : 16 février 2026*
+*Dernière mise à jour : 17 février 2026*
