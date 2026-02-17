@@ -2,7 +2,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:
-  name: site-docs
+  name: site-vitrine-loutik
   namespace: flux-system
 spec:
   image: ghcr.io/firetoak/site-vitrine-loutik
