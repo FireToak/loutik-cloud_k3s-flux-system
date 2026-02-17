@@ -1,0 +1,12 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImagePolicy
+metadata:
+  name: site-vitrine-loutik
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: site-vitrine-loutik
+  policy:
+    semver:
+      range: '>=1.0.0'

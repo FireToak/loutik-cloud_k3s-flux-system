@@ -1,0 +1,25 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImageUpdateAutomation
+metadata:
+  name: site-vitrine-loutik
+  namespace: flux-system
+spec:
+  git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        email: contact@loutik.fr
+        name: fluxcd
+      messageTemplate: 'chore: mise a jour auto de l''image site-vitrine-loutik'
+    push:
+      branch: main
+  interval: 1m0s
+  sourceRef:
+    kind: GitRepository
+    name: k3s-manifests
+  update:
+    path: ./apps/site-vitrine-loutik
+    strategy: Setters
