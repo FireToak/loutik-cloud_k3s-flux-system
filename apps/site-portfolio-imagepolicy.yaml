@@ -1,0 +1,12 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImagePolicy
+metadata:
+  name: site-portfolio
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: portfolio-bts-sio
+  policy:
+    semver:
+      range: '>=1.0.0'
