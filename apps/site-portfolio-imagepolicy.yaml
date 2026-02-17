@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: portfolio-bts-sio
+    name: site-portfolio
   policy:
     semver:
       range: '>=1.0.0'
