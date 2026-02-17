@@ -9,3 +9,5 @@ spec:
   ref:
     branch: main
   url: https://github.com/FireToak/loutik-cloud_k3s-manifests
+  secretRef:
+    name: github-token
