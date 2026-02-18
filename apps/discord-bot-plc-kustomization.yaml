@@ -11,4 +11,4 @@ spec:
   sourceRef:
     kind: GitRepository
     name: k3s-manifests
-  targetNamespace: site-internet
+  targetNamespace: discord-bot
