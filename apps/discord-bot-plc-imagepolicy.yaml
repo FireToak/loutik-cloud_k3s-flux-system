@@ -1,0 +1,12 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImagePolicy
+metadata:
+  name: discord-bot-plc
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: discord-bot-plc
+  policy:
+    semver:
+      range: '>=1.0.0'

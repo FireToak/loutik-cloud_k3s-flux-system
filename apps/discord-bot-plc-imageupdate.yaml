@@ -1,0 +1,25 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImageUpdateAutomation
+metadata:
+  name: discord-bot-plc
+  namespace: flux-system
+spec:
+  git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        email: contact@loutik.fr
+        name: fluxcd
+      messageTemplate: 'chore: mise a jour auto de l''image discord-bot-plc'
+    push:
+      branch: main
+  interval: 1m0s
+  sourceRef:
+    kind: GitRepository
+    name: k3s-manifests
+  update:
+    path: ./apps/discord-bot-plc
+    strategy: Setters
