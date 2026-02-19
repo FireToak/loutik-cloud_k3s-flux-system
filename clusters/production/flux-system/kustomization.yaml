@@ -15,8 +15,9 @@ patches:
             nodeSelector:
               node-role.kubernetes.io/control-plane: "true"
             tolerations:
-              - key: node-role.kubernetes.io/control-plane
-                operator: Exists
-                effect: NoSchedule
+              - key: CriticalAddonsOnly
+                operator: Equal
+                value: "true"
+                effect: NoExecute
     target:
       kind: Deployment
